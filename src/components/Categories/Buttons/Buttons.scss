@@ -1,0 +1,36 @@
+.button__title {
+  font-family: 'Rotterburg Stylish FREE', sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 31px;
+  line-height: 34px;
+  color: #c9ac8c;
+}
+
+.button__btns {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+.button__btn {
+  font-family: 'Steinbeck', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  border: none;
+  outline: none;
+  padding-top: 12px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: 70px;
+  cursor: pointer;
+}
+
+
+.button__btn-jadid {
+  color: #C9AC8C;
+}
+
+.active {
+  color: #c9ac8c;
+}

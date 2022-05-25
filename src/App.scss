@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Rotterburg Stylish FREE';
+  src: url('./assets/fonts/RotterburgStylishFREE-Regular.woff2') format('woff2'),
+      url('./assets/fonts/RotterburgStylishFREE-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  src: url('./assets/fonts/HelveticaNeueCyr-Light.woff2') format('woff2'),
+      url('./assets/fonts/HelveticaNeueCyr-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Steinbeck';
+  src: url('./assets/fonts/SteinbeckFC-Reg.woff2') format('woff2'),
+      url('./assets/fonts/SteinbeckFC-Reg.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Steinbeck';
+  src: url('./assets/fonts/SteinbeckFC-GrasObl.woff2') format('woff2'),
+      url('./assets/fonts/SteinbeckFC-GrasObl.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Steinbeck';
+  src: url('./assets/fonts/SteinbeckFC-Gras.woff2') format('woff2'),
+      url('./assets/fonts/SteinbeckFC-Gras.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+body {
+  font-family: 'Steinbeck', sans-serif;
+  font-family: serif;
+  background-color: #191919;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+::-webkit-scrollbar{
+  width: 3px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #191919;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #c9ac8c;
+}
+.container {
+  width: 100%;
+  max-width: 1310px;
+  padding: 0 10px;
+  margin: 0 auto;
+}

@@ -1,0 +1,324 @@
+.newbook {
+  display: flex;
+  padding-top: 60px;
+}
+.newbook__img-div {
+  width: 520px;
+  height: 680px;
+  margin-right: 60px;
+}
+.newbook__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.newbook__title {
+  font-family: "Rotterburg Stylish FREE";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 53px;
+  margin: 0;
+  color: #c9ac8c;
+}
+.newbook__name-div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.newbook__author-name {
+  font-family: "Steinbeck";
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  font-size: 16px;
+  line-height: 16px;
+  margin-right: 10px;
+  color: #c9ac8c;
+}
+.newbook__icon-div {
+  font-family: "Visuelt Pro";
+  font-style: normal;
+  position: relative;
+  top: 2px;
+  font-weight: 300;
+  font-size: 12px;
+  margin: 0;
+  line-height: 144.4%;
+  color: rgba(255, 255, 255, 0.6);
+}
+.newbook__icon {
+  margin-right: 3px;
+  margin-left: 5px;
+  color: #fff;
+}
+
+.newbook__sahifalar {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+.newbook__sahifaName {
+  font-family: "Steinbeck";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  margin-right: 10px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.newbook__span-public {
+  display: inline-block;
+  font-family: "Steinbeck";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.newbook__type {
+  text-transform: capitalize;
+}
+
+.newbook__toliq {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.newbook__toliq-title {
+  font-family: "Steinbeck";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  margin-right: 10px;
+  color: #c9ac8c;
+}
+.newbook__icon-toliq {
+  font-size: 16px;
+  color: #fff;
+}
+
+.newbook__hr {
+  position: relative;
+  top: -24px;
+  left: 150px;
+  width: 80%;
+  margin: 0;
+  border: 1px solid rgba(201, 172, 140, 0.6);
+}
+.newbook__desc {
+  font-family: "Steinbeck";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 144.4%;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+.desc1 {
+  margin-bottom: 30px;
+}
+
+.newbook__mavjud {
+  font-family: "Steinbeck";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  margin: 0;
+  margin-top: 50px;
+  color: #c9ac8c;
+}
+
+.newbook__mavjud-div {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.newbook__icon-mavjud {
+  font-size: 18px;
+  color: #fff;
+  padding-left: 35px;
+}
+
+.newbook__qogoz {
+  font-family: "Steinbeck";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 5px;
+  line-height: 16px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.newbook__span-price {
+  display: inline-block;
+  font-family: "Steinbeck";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.newbook__mains {
+  display: flex;
+  align-items: center;
+}
+.newbook__mavjud-div {
+  margin-right: 30px;
+}
+.newbook__mavjud-div2,
+.newbook__mavjud-div3 {
+  margin-right: 30px;
+  position: relative;
+  top: 15px;
+}
+
+.newbook__icon-mavjud2 {
+  font-size: 18px;
+  color: #fff;
+  padding-left: 25px;
+}
+
+.newbook__icon-mavjud3 {
+  font-size: 18px;
+  color: #fff;
+  padding-left: 18px;
+}
+
+.newbook__btn {
+  position: relative;
+  top: 20px;
+  left: 230px;
+  font-family: "Steinbeck";
+  padding: 12px 32px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #3c2710;
+  background-color: #c9ac8c;
+}
+
+.newbook__mualif-div {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.newbook__m1 {
+  font-family: "Steinbeck";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 0;
+  padding-top: 30px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: 70px;
+}
+.m2 {
+  color: #c9ac8c;
+}
+.newbook__inson-divmain {
+  display: flex;
+  align-items: center;
+}
+.newbook__inson {
+  position: relative;
+  margin-top: 50px;
+  width: 700px;
+  height: 200px;
+  background: linear-gradient(263.94deg, #161616 0%, #1e1e1e 98.06%);
+  border-radius: 15px;
+  margin-right: 30px;
+}
+.newbook__inson-desc {
+  width: 550px;
+  font-family: "Steinbeck";
+  font-style: normal;
+  font-weight: 400;
+  padding: 40px 70px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.newbook__imgss {
+  position: absolute;
+  top: -10px;
+  left: 60px;
+}
+
+.newbook__icon-inson {
+  font-size: 20px;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.newbook__icons-div {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.newbook__inson2 {
+  position: relative;
+  margin-top: 50px;
+  width: 600px;
+  height: 200px;
+  background: linear-gradient(263.94deg, #161616 0%, #1e1e1e 98.06%);
+  border-radius: 15px;
+}
+.desc2 {
+  padding: 60px 30px;
+}
+.incons2 {
+  position: absolute;
+  left: 20px;
+}
+
+.newbook__yoqish {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+  margin-bottom: 30px;
+}
+
+.newbook__yoqish-title {
+  font-family: "Steinbeck";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 25px;
+  color: #c9ac8c;
+}
+
+.newbook__yoqish-text {
+  font-family: "Steinbeck";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.newbookarr{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}

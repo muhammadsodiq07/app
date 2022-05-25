@@ -1,0 +1,25 @@
+.bookking {
+  width: 130px;
+}
+.commeting {
+  margin-bottom: 50px;
+}
+
+.about__author-name {
+  margin: 0;
+  font-family: "Visuelt Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 144.4%;
+  color: rgba(255, 255, 255, 0.6);
+}
+.bookCotegories {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+
+.newbooks {
+  text-decoration: none;
+}
