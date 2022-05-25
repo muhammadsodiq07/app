@@ -28,11 +28,12 @@ function BookPage() {
                   </div>
   
                   <div className="newbook__right">
-                    <Link to={`/Yozuvchilar/${item.id}`}>
                     <h2 className="newbook__title">{bookObj.bookName}</h2>
-                    </Link>
+                   
                     <div className="newbook__name-div">
-                      {/* <h4 className="newbook__author-name">{item.name}</h4> */}
+                    <Link to={`/Yozuvchilar/${item.id}`}>
+                      <h4 className="newbook__author-name">{item.name}  {item.lastName}</h4>
+                    </Link>
                       <p className="newbook__icon-div">
                         |<i class="bx bxs-star newbook__icon"></i>
                         4.1
