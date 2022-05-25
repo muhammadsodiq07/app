@@ -1,15 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import Buttons from "./Buttons/Buttons";
 import "./Categories.scss";
-import Pagination from "./Pagniton/Pagrion";
 
 function Categories(props) {
-  const [currentPage, setCurrentPage] = useState(1);
 
-
-  // Change page
-  const paginate = pageNumber => setCurrentPage(pageNumber)
   let categoryArr = [
     "All",
     "O'zbek",
@@ -40,11 +35,10 @@ function Categories(props) {
         </ul>
         <ul id="categories" className="categories container">
           {props.newArr.map((item, i) => {
-            if(i < 12) {
               return (
                 <>
-                  <Link className="categories__links" to={`Yozuvchilar/${item.id}`}>
-                    <li key={currentPage.id} className="categories__item">
+                  <Link className="categories__links" to={`/Yozuvchilar/${item.id}`}>
+                    <li className="categories__item">
                      <div className="categories__img-div">
                      <img className="categories__img" src={item.img} alt="avloniy" />
                      </div>
@@ -60,11 +54,7 @@ function Categories(props) {
                   </Link>
                 </>
               );
-            }
           })}
-          <Pagination
-            paginate={paginate}
-          />
         </ul>
       </div>
     </div>

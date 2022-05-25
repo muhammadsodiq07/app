@@ -3,7 +3,8 @@ import "./Buttons.scss";
 
 function Buttons(props) {
   const typeHandler = (e) => {
-    if (e.target.id === "All") {
+    let btnValue = e.target.textContent
+    if (btnValue === "All") {
       props.setNewArr(props.UserObj)
     } else if (e.target.id === "uzbek") {
       props.setNewArr(
