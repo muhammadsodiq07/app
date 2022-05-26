@@ -209,6 +209,15 @@
   line-height: 16px;
   color: #3c2710;
   background-color: #c9ac8c;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #826445;
+  }
+
+  &:active {
+    background-color: #fff;
+  }
 }
 
 .newbook__mualif-div {

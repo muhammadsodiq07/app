@@ -1,0 +1,9 @@
+.save {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.save__item {
+  list-style: none;
+  margin-right: 10px;
+}
