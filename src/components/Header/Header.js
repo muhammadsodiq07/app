@@ -13,7 +13,9 @@ function Header() {
         <div className="container">
           <div className="header__main">
             <div className="header__logo-div">
+              <Link to="/">
               <img src={logo} alt="logo" />
+              </Link>
             </div>
             <div className="header__right-div">
               <ul className="header__list">
