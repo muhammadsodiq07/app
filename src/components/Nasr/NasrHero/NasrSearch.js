@@ -6,14 +6,21 @@ import Users from "../../../Users";
 function Search(props) {
   let temp = [];
   const searchHandler = (e) => {
-    Users.forEach((item) => {
-      item.bookObj.map(el => {
-        if(el.bookName.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())) {
-          temp.push(item);
-        }
-      })  
-    });
-    props.setBookNewArr(temp);
+    console.log(e.keyCode);
+    if(e.keyCode !== 8){
+      Users.forEach((item) => {
+        item.bookObj.map(el => {
+          if(el.bookName.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())) {
+            temp.push(item);
+          }
+        })  
+        props.setBookNewArr(temp);
+      });
+    }else {
+      props.setBookNewArr(Users.map(item => {
+          return item
+      }))
+    }
   };
   return (
     <div>
@@ -23,7 +30,7 @@ function Search(props) {
         </div>
         <div className="search__input-div">
           <input
-            onChange={searchHandler}
+            onKeyUp={searchHandler}
             className="search__input"
             type="text"
             placeholder="Adiblar, kitoblar, audiolar, maqolalar..."

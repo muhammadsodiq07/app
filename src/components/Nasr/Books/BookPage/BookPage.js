@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React  from "react";
 import "./BookPage.scss";
 import "../Books.scss";
 import { Link, useLocation } from "react-router-dom";
@@ -6,20 +6,8 @@ import Users from "../../../../Users"
 
 function BookPage(props) {
   let location = useLocation();
-  let [arr, setArr] = useState(Users);
 
-  let bookHandler = (elId) => {
-    let temp = [];
-    arr.map((item, index) => {
-      return item.bookObj.map((el, idx) => {
-        if(el.bookId === elId){
-          temp.push(el);
-          return el;
-        }
-      })
-    })
-    props.setSaved([...props.saved, temp]);
-  }
+
 
   return (
     <div>
@@ -114,7 +102,7 @@ function BookPage(props) {
                       </div>
                       <div>
                         <button className="newbook__btn"
-                        onClick={() => bookHandler(bookObj.bookId)}
+                        onClick={() => props.bookHandler(bookObj)}
                         >
                           Javonga qo’shish
                         </button>

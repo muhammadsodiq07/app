@@ -4,34 +4,37 @@ import "./ButtonBooks.scss";
 
 function ButtonBooks(props) {
   const typeHandler = (e) => {
-    Users.forEach((item) => {
-      item.bookObj.map((el) => {
-        if (e.target.bookId === "All") {
-          props.setNewArr(
-            Users.filter((item) => {
-              return item.genre === e.target.bookId;
+   
+        if (e.target.id === "All") {
+          props.setBookNewArr(
+            Users.map((item) => {
+              return item;
             })
           );
-        } else if (e.target.bookId === "uzbek") {
-          props.setNewArr(
+        } else if (e.target.id === "uzbek") {
+          props.setBookNewArr(
             Users.filter((item) => {
-              return item.genre === e.target.bookId;
+              return item.genre.toLocaleLowerCase() === e.target.id.toLocaleLowerCase();
             })
           );
-        } else if (e.target.bookId === "Diniy") {
-          props.setNewArr(
-            Users .filter((item) => {
-              return item.genre === e.target.bookId;
+        } else if (e.target.id === "Diniy") {
+          props.setBookNewArr(
+            Users.filter((item) => {
+              return item.genre.toLocaleLowerCase() === e.target.id.toLocaleLowerCase();
+            })
+          );
+        } else if (e.target.id === "Jahon") {
+          props.setBookNewArr(
+            Users.filter((item) => {
+              return item.genre.toLocaleLowerCase() === e.target.id.toLocaleLowerCase();
             })
           );
         }
-      });
-    });
   };
 
   return (
     <li className="category__item">
-      <button className="button__btn" onClick={typeHandler} bookId={props.bookId}>
+      <button className="button__btn" onClick={typeHandler} id={props.id}>
         {props.item}
       </button>
     </li>

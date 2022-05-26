@@ -15,7 +15,14 @@ import EditProfile from "./components/EditProfile/EditProfile";
 import SaveBooks from "./components/SaveBooks/SaveBooks";
 
 function App() {
-  let [saved, setSaved] = useState([]);
+  
+  const [save,setsave] = useState([])
+
+  const bookHandler = (book) => {
+    if (save.indexOf(book) !== -1) return
+    setsave([...save, book])
+    console.log(save);
+  }
   const [name, setname] = useState("");
   const [lastname, setlastname] = useState("");
   const [email, setemail] = useState("");
@@ -61,14 +68,13 @@ function App() {
          setcountry={setcountry}
         />}/>
         <Route path="SaveBooks" element={<SaveBooks
-        saved={saved}
-        setSaved={setSaved}
+        save={save}
+        setSaved={setsave}
         />}/>
         <Route path='SignIn' element={<SignIn/>}/>
         <Route path="Yozuvchilar/:id" element={<Yozuvchilar />} />
         <Route path="BookPage/:id" element={<BookPage
-        saved={saved}
-        setSaved={setSaved}
+        bookHandler={bookHandler}
         />} />
       </Routes>
      
