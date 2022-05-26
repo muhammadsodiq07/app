@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.scss";
 import logo from "../../assets/imgs/logo.svg";
-import avatar from "../../assets/imgs/logoavatar.png";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const navbar = ["Bosh sahifa", "Nasr", "Nazm", "Maqolalar", "Forum"];
-
 function Header() {
+
+  let [isClicked, setClick] = useState(false)
   return (
     <div>
       <header id="header">
@@ -36,14 +36,35 @@ function Header() {
                           </NavLink>
                         )}
                       </li>
-                    </>
+                    </> 
                   );
                 })}
               </ul>
-              <div className="header__avater-div">
-                <img className="header__avatar" src={avatar} alt="avatar" />
-                <i className="bx bx-chevron-down header__down-icon"></i>
+              <div className='header__modal__wrap'>
+              <button onClick={() => setClick(!isClicked)} className='d-flex header__user__btn align-items-center'>
+                <img className='header__avatar me-1' src="https://imgur.com/VjgEdz3.png" alt="userAvatar" />
+                <i className='bx bx-chevron-down header__down-icon'></i>
+              </button>
+              <div style={{display: isClicked ? 'block' : 'none'}} className='header__modal'>
+                <ul className='list-unstyled header__modal__list p-3 m-0'>
+                 <Link className="heaederLink" to="Info">
+                  <li className='header__modal__item'>
+                    <p className='mb-3 d-flex align-items-center'><i class='bx header__user__icon me-2 bxs-user'></i>Profile</p>
+                  </li>
+                 </Link>
+                <Link className="heaederLink" to="EditProfile">
+                <li className='header__modal__item'>
+                    <p className='mb-3 d-flex align-items-center'><i class='bx header__user__icon me-2 bxs-cog'></i>Edit profile</p>
+                  </li>
+                </Link>
+                 <Link to="SaveBooks" className="heaederLink">
+                 <li className='header__modal__item'>
+                    <p className='mb-3 d-flex align-items-center'><i class='bx header__user__icon me-2 bxs-bookmark-star'></i>Wishlist</p>
+                  </li>
+                 </Link>
+                </ul>
               </div>
+            </div>
             </div>
           </div>
         </div>

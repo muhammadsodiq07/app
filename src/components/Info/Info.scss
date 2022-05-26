@@ -1,0 +1,72 @@
+.info__div {
+  position: relative;
+  width: 1210px;
+  height: 300px;
+  background: radial-gradient(
+    85.43% 1678.66% at 98.07% 50%,
+    #2f2f2f 0%,
+    #171717 100%
+  );
+  box-shadow: 0px 4px 73px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.info__main-div {
+  padding: 50px 70px;
+}
+.info__avatar-div {
+  margin-right: 30px;
+}
+
+.info__img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.info__avatar {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.info__name {
+  margin: 0;
+  font-family: "Steinbeck";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 144.4%;
+  color: #c9ac8c;
+  text-transform: capitalize;
+}
+.info__email {
+  margin: 0;
+  font-family: "Steinbeck";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 144.4%;
+  color: #ffffff;
+}
+.info__phone {
+  margin: 0;
+  font-family: "Steinbeck";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 144.4%;
+  color: #ffffff;
+}
+.info__country {
+  margin: 0;
+  font-family: "Steinbeck";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 144.4%;
+  color: #ffffff;
+}

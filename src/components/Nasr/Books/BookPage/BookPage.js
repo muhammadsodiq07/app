@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import "./BookPage.scss";
 import "../Books.scss";
 import { Link, useLocation } from "react-router-dom";
 import Users from "../../../../Users"
 
-function BookPage() {
+function BookPage(props) {
   let location = useLocation();
+  let [arr, setArr] = useState(Users);
+
+  let bookHandler = (elId) => {
+    let temp = [];
+    arr.map((item, index) => {
+      return item.bookObj.map((el, idx) => {
+        if(el.bookId === elId){
+          temp.push(el);
+          return el;
+        }
+      })
+    })
+    props.setSaved([...props.saved, temp]);
+  }
 
   return (
     <div>
@@ -99,7 +113,9 @@ function BookPage() {
                         </div>
                       </div>
                       <div>
-                        <button className="newbook__btn">
+                        <button className="newbook__btn"
+                        onClick={() => bookHandler(bookObj.bookId)}
+                        >
                           Javonga qo’shish
                         </button>
                       </div>
@@ -146,12 +162,12 @@ function BookPage() {
                     </div>
                   </div>
                 </div>
-                <div className="newbook__yoqish">
+                {/* <div className="newbook__yoqish">
                   <h4 className="newbook__yoqish-title">
                     Sizga yoqishi mumkin
                   </h4>
                   <p className="newbook__yoqish-text">Barchasini ko’rish</p>
-                </div>
+                </div> */}
                 {/* <ul className="newbookarr container">
                   {item.newBookArray.map((newBook) => {
                     return (
